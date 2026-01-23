@@ -1,0 +1,15 @@
+{"level":"info","message":"[mb:2525] mountebank v2.9.2 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2026-01-23T09:54:52.926Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-01-23T09:55:48.921Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-01-23T09:56:35.011Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-01-23T09:56:41.147Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2026-01-23T10:05:02.421Z"}
+{"level":"info","message":"[http:4545] Open for business...","timestamp":"2026-01-23T10:05:02.427Z"}
+{"level":"info","message":"[http:4545] ::ffff:127.0.0.1:57816 => POST /test","timestamp":"2026-01-23T10:05:12.358Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2026-01-23T10:11:43.753Z"}
+{"level":"error","message":"[mb:2525] Invalid JSON: {\r\n  \"port\": 4546,\r\n  \"protocol\": \"http\",\r\n  \"stubs\": [{\r\n    \"responses\": [\r\n      { \"is\": { \"statusCode\": 200 \"body\":{\"marcas\":[\"Toyota\", \"Audi\", \"Ford\", \"Volvo\", \"Honda\"]} }}\r\n    ],\r\n    \"predicates\": [{\r\n      \"and\": [\r\n        {\r\n          \"equals\": {\r\n            \"path\": \"/api/marcas\",\r\n            \"method\": \"POST\",\r\n            \"headers\": { \"Content-Type\": \"application/json\" }\r\n          }\r\n        },\r\n        {\r\n          \"not\": {\r\n            \"contains\": { \"body\": \"requiredField\" },\r\n            \"caseSensitive\": true\r\n          }\r\n        }\r\n      ]\r\n    }]\r\n  }]\r\n}","timestamp":"2026-01-23T10:11:43.754Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2026-01-23T10:12:26.028Z"}
+{"level":"info","message":"[http:4546] Open for business...","timestamp":"2026-01-23T10:12:26.030Z"}
+{"level":"info","message":"[http:4546] ::ffff:127.0.0.1:53138 => POST /api/marcas","timestamp":"2026-01-23T10:12:30.514Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2026-01-23T10:27:10.323Z"}
+{"level":"info","message":"[http:4547] Open for business...","timestamp":"2026-01-23T10:27:10.325Z"}
+{"level":"info","message":"[http:4547] ::ffff:127.0.0.1:59831 => GET /api/cars?brand=Toyota","timestamp":"2026-01-23T10:27:17.113Z"}
