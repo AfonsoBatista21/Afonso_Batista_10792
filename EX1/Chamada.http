@@ -1,4 +1,4 @@
-POST http://localhost:4546/api/marcas
+GET  http://localhost:4546/api/marcas
 Content-Type: application/json
 
 {

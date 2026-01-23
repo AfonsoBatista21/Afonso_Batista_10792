@@ -1,5 +1,6 @@
 POST http://localhost:2525/imposters  
 
+
 {
   "port": 4546,
   "protocol": "http",
@@ -12,7 +13,7 @@ POST http://localhost:2525/imposters
         {
           "equals": {
             "path": "/api/marcas",
-            "method": "POST",
+            "method": "GET",
             "headers": { "Content-Type": "application/json" }
           }
         },
