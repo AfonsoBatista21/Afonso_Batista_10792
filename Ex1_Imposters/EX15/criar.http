@@ -1,27 +1,27 @@
 POST http://localhost:2525/imposters
 
 {
-  "port": 4548,
+  "port": 4558,
   "protocol": "http",
   "stubs": [
     {
       "predicates": [
         {
           "equals": {
-            "method": "GET",
-            "path": "/api/cars"
+            "method": "GET"
           }
         }
       ],
       "responses": [
         {
           "is": {
-            "statusCode": 200,
+            "statusCode": 404,
             "headers": {
               "Content-Type": "application/json"
             },
             "body": {
-              "results": []
+              "error": "not_found",
+              "message": "Resource not found"
             }
           }
         }
